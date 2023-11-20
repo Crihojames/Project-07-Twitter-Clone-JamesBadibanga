@@ -8,6 +8,10 @@ body{
     max-width: 1800px;
 }
 
+div{
+    border: solid 1px white;
+}
+
 #root{
     width: 100%;
     display: flex;
