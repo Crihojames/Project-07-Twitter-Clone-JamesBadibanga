@@ -11,6 +11,7 @@ const TweetEditorInput = ({ message }) => {
         onChange={(event) => setValue(event.target.value)}
         maxLength={280}
         className="tweet-editor-input"
+        placeholder="What's happening?"
       />
       <p>
         {message}
