@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from '../../src/images/profile-photo.png'
 
-const Avatar = () => {
+const Avatar = ({Image}) => {
     return (
         <div className='avatar'>
-            <img src= {Image} alt="images" />
+            <img src="src/images/profile-photo.png" alt="images" />
         </div>
     );
 };
