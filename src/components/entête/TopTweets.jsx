@@ -2,9 +2,7 @@ import React from 'react';
 
 const TopTweets = () => {
     return (
-        <div className='top-tweets'>
-            <p>Star</p>
-        </div>
+            <img src="src\images\Vector.svg" alt="" className='top-tweets'/>
     );
 };
 
