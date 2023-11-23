@@ -1,11 +1,11 @@
 const Data = [
 {
-    avatar:"src/images/tweet-profile-photo.png",
+    avatar:"src/images/Tweet-Profile-Photo.svg",
     titleTweet:"CNN",
     verified:"src/images/Verified.svg",
     titledetails:"@criho",
     date:"7m",
-    textTweet :"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a <major breakthrough> that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+    textTweet :"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
     ImageTweet :"",
     commentary : "57",
     reTweet : "144",
