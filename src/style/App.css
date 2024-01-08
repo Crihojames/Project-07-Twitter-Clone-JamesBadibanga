@@ -8,10 +8,6 @@ body{
     max-width: 1800px;
 }
 
-/* div{
-    border: solid 1px white;
-} */
-
 #root{
     width: 100%;
     display: flex;
@@ -24,7 +20,6 @@ body{
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
-
 .header {
     padding: 1.5rem 1rem;
     display: flex;
@@ -185,7 +180,7 @@ body{
     font-size: 1rem;
 }
 
-.tweet-actions svg {
+.tweet-actions svg{
     width: 1rem;
     height: auto;
     color: #2F3336;
@@ -196,4 +191,359 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: auto;
+}
+
+/* sidebar css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    height: 100vh;
+    width: 40vh;
+    position: sticky;
+    top: 0;
+}
+.sidebar-image{
+    width: 20%;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.footer-sidebar{
+    margin-top: auto;
+}
+.compte-icon{
+    display: flex;
+    gap: 150px;
+}
+/* end sidebar css */
+
+/* sidebarOptions css */
+.sidebarOptions {
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+}
+.sidebarOptions > li {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 12px;
+}
+li {
+    display: flex;
+    gap: 20px;
+    padding: 5px 7px;
+}
+li:hover{
+    background-color: #181818;
+    border-radius: 30px;
+    transition: #181818 100ms ease-out;
+    width: 56%;
+}
+
+.navLink{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    border: none;
+    font-weight: 900;
+    text-transform: inherit;
+    width: 100%;
+}
+
+/* end sidebarOptions css */
+
+/* compte-in-sidebar-css */
+.compte-in-sidebar{
+    display: flex;
+    gap: 10px;
+}
+
+.compte-in-sidebar-avatar{
+    width: 10%;
+}
+
+/* end compte-in-sidebar-css */
+
+/* scroll css */
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+/* end scroll css */
+
+/* trend-style-code-css */
+.trends{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    height: 100vh;
+    width: 40vh;
+    
+}
+
+.trends-input{
+    display: flex;
+    align-items: center;
+    background-color: #2F3336;
+    border-radius: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.trends-input > input{
+    border: none;
+    outline: none;
+    background-color: #2F3336;
+    padding-left: 25px;
+    color: #fff;
+    position: sticky;
+}
+
+.trends-input > img{
+    width: 8%;
+}
+
+.trends-container{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding: 10px;
+    background-color: #2F3336;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.trends-container-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trends-container-follo{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding: 15px;
+    background-color: #2F3336;
+    border-radius: 20px;
+    height: 320px;
+}
+
+.trends-list, .follow-list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.trendslist-button{
+    font-weight: 900;
+    color: #1D9BF0;
+    cursor: pointer;
+}
+
+.trends-list-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trendsCopieRigth{
+    position: sticky;
+    top: 0;
+}
+
+.follow-title > img{
+    width: 15%;
+}
+
+.follow-list-title{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.follow-title{
+    display: flex;
+    gap: 5px;
+}
+
+.follow-button{
+    background-color: #fff;
+    width: 80px;
+    height: 25px;
+    margin-left: 12px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* profil style css */
+.trends-container-profil{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding: 15px;
+    background-color: #2F3336;
+    border-radius: 20px;
+    height: 350px;
+}
+
+.image-background-profil{
+    height: 150px;
+    background-image: url('src/images/JS-Full-Form.webp');
+}
+
+.image-background-profil > img{
+    margin-top: 100px;
+    margin-left: 20px;
+    background-color: #181818;
+    border-radius: 100%;
+}
+
+.profil-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    height: 250px;
+    border-bottom: #6E767D solid 1px;
+}
+
+.profil-button {
+    margin-top: 10px;
+    margin-left: 81%;
+    margin-right: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: #fff solid 2px;
+    text-decoration: none;
+    padding: .6rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 8rem;
+}
+
+.profil-follow {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.sub-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.details-count {
+    padding-left: 10px;
+}
+
+/* navigation-profil-css */
+.profil-nav {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+}
+
+.profil-nav p {
+    color: #646464;
+    padding: 10px 10px;
+}
+
+.profil-nav p:hover{
+    background-color: #181818;
+}
+
+.profil-nav .post {
+    border-bottom: 3px solid #1D9BF0;
+    border-radius: 2px;
+}
+
+/* over-tweet-css */
+
+.tweet-action-button-over {
+    padding: 10px;
+}
+
+.tweet-action-button-reply:hover .tweet-action-button-over{
+    color: #92114d;
+    background-color: #200914;
+    border-radius: 30px;
+}
+
+.tweet-action-button-reply:hover .tweet-action-button-over-2{
+    color: #92114d;
+    border-radius: 30px;
+}
+
+.tweet-action-button-retweet:hover .tweet-action-button-over{
+    color: #1d9bf0;
+    background-color: #0a171f;
+    border-radius: 30px;
+}
+
+.tweet-action-button-retweet:hover .tweet-action-button-over-2{
+    color: #1d9bf0;
+    border-radius: 30px;
+}
+
+.tweet-action-button-react:hover .tweet-action-button-over{
+    color: #00ba7c;
+    background-color: #071a14;
+    border-radius: 30px;
+}
+
+.tweet-action-button-react:hover .tweet-action-button-over-2{
+    color: #00ba7c;
+    border-radius: 30px;
+}
+
+.tweet-action-button-group:hover .tweet-action-button-over{
+    color: #1d9bf0;
+    background-color: #0a171f;
+    border-radius: 30px;
+}
+
+.tweet-action-button-group:hover .tweet-action-button-over-2{
+    color: #1d9bf0;
+    border-radius: 30px;
+}
+
+.tweet-action-button-react{
+    display: flex;
+    gap: 10px;
+}
+/* overs des texte sur les boutton d'action tweet */
+.tweet-actions > .tweet-action-button-reply :hover{
+    color: blue;
+}
+
+.tweet-actions > .tweet-action-button-retweet :hover{
+    color: green;
+}
+.tweet-actions > .tweet-action-button-react :hover{
+    color: red;
+}
+.tweet-actions > .tweet-action-button-group :hover{
+    color: cyan;
 }
