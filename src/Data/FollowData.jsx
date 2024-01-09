@@ -7,7 +7,7 @@ const followData = [
     },
     {
         id:2,
-        avatar:"src/images/tweet-profile-photo.png",
+        avatar:"src/images/Profile-Photo-CNN.svg",
         title:"CNN",
         author:"@CNN"
      },
