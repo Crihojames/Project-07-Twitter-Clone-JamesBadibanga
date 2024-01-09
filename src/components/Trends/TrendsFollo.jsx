@@ -18,7 +18,7 @@ function TrendsFollo() {
                 <div className="follow-title">
                     <img src={follow.avatar} alt="" />
                     <div className="follow-list-title">
-                          <span>{follow.title}</span>
+                          <span>{follow.title} <img src={follow.certificat} alt="" /> </span>
                           <p className="tweet-title-details">{follow.author}</p>
                     </div>
                     <button className="follow-button" onClick={()=>handleClick()}>{isOn ? 'Following' : 'Follow'}</button>

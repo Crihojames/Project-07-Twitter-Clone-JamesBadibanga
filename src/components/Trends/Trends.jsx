@@ -14,7 +14,7 @@ export default function Trends() {
         <div className="trends-container">
             <div className='trends-container-title'>
                 <h2>Trends for you</h2>
-                <img src={Settings} alt="" />
+               <button><img src={Settings} alt="" /></button>
             </div>
             <TrendsList />
         </div>
