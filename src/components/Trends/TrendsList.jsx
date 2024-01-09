@@ -11,7 +11,7 @@ function TrendsList() {
               <span className="tweet-title-details">{trends.title}</span>
               <img src={More2} alt="" />
             </div>
-            <p>{trends.author}</p>
+            <p className="trends-author">{trends.author}</p>
             <p className="tweet-title-details">{trends.number} <span className="tweet-title-details"> Tweets</span></p>
           </div>
         ))

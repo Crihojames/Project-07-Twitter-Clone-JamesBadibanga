@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+div{
+    border: solid 1px #fff;
+}
 
 body{
     background-color: black;
@@ -288,20 +291,23 @@ li:hover{
 .trends{
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
     padding-left: auto;
     padding-right: auto;
-    height: 100vh;
-    width: 40vh;
+    padding-bottom: 119px;
+    min-height: 1024px;
+    width: 360px;
+    font-family: 'Inter', sans-serif;
     
 }
 
 .trends-input{
     display: flex;
     align-items: center;
-    background-color: #2F3336;
-    border-radius: 20px;
-    padding: 10px;
+    background-color: rgb(32, 35, 39);
+    border-radius: 42px;
+    margin-top: 6px;
+    height: 42px;
+    width: 350px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -310,23 +316,26 @@ li:hover{
 .trends-input > input{
     border: none;
     outline: none;
-    background-color: #2F3336;
+    background-color: rgb(32, 35, 39);
     padding-left: 25px;
     color: #fff;
     position: sticky;
+    font-size: 15px;
 }
 
 .trends-input > img{
-    width: 8%;
+    width: 18px;
+    height: 18px;
+    margin: 12px;
 }
 
 .trends-container{
-    margin-top: 10px;
-    padding-left: 5px;
-    padding: 10px;
-    background-color: #2F3336;
-    border-radius: 20px;
-    height: 400px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgb(32, 35, 39);
+    border-radius: 15px;
+    min-height: 426px;
+    width: 350px;
 }
 
 .trends-container-title{
@@ -334,14 +343,24 @@ li:hover{
     justify-content: space-between;
 }
 
+.trends-author{
+    font-weight: bold;
+}
+
+.trends-container-title > img{
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
 .trends-container-follo{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 15px;
-    background-color: #2F3336;
-    border-radius: 20px;
-    height: 320px;
+    background-color: rgb(32, 35, 39);
+    border-radius: 15px;
+    min-height: 320px;
+    width: 350px;
 }
 
 .trends-list, .follow-list{
@@ -349,6 +368,7 @@ li:hover{
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .trendslist-button{
@@ -372,22 +392,22 @@ li:hover{
 }
 
 .follow-list-title{
-    display: flex;
-    justify-content: space-between;
+    width: 180px;
     margin-left: 5px;
 }
+
 .follow-title{
     display: flex;
-    gap: 5px;
 }
 
 .follow-button{
     background-color: #fff;
-    width: 80px;
-    height: 25px;
+    width: 73px;
+    height: 31px;
     margin-left: 12px;
-    border: none;
-    border-radius: 30px;
+    border-radius: 32px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 /* profil style css */
