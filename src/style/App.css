@@ -240,7 +240,6 @@ button {
 }
 .compte-icon{
     display: flex;
-    gap: 150px;
 }
 /* end sidebar css */
 
@@ -292,12 +291,23 @@ li:hover{
 .compte-in-sidebar{
     display: flex;
     gap: 10px;
+    width: 251px;
+    height: 64px;
+    margin: 6px;
 }
 
 .compte-in-sidebar-avatar{
-    width: 10%;
+    width: 40px;
+    height: 40PX;
+    margin: 5px;
 }
 
+.title-icon{
+    width: 200px;
+}
+.compMortIcon{
+  padding-top: 15px;  
+}
 /* end compte-in-sidebar-css */
 
 /* scroll css */
