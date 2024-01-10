@@ -32,7 +32,7 @@ export default function Tweet() {
                             {tweet.imageTweet && <span className='tweet-image'><img src={tweet.imageTweet} alt=""/></span>}
                         </div>
                         <div className="tweet-actions">
-                            <IconComent counts={tweet.message} className={'tweet-action-button-reply'}/>
+                            <IconComent counts={tweet.message} className='tweet-action-button-reply'/>
                             <IconRetweet counts={tweet.share} className={'tweet-action-button-retweet'}/>
                             <IconLike counts={tweet.like} className={'tweet-action-button-react'} />
                             <IconUpload counts={tweet.upload} className={'tweet-action-button-group'}/>
