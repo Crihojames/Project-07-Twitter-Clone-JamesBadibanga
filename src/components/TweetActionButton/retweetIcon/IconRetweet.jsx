@@ -4,7 +4,6 @@ import retweetIcon from "../../../images/Retweet.svg";
 import retweetedIcon from "../../../images/retweet.png";
 
 
-
 export default function IconRetweet({ counts }) {
   const [isRetweeted, setIsRetweeted] = useState(false)
   const [count, setCount] = useState(counts)
