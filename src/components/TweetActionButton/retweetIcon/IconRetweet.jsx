@@ -1,31 +1,32 @@
 import React from 'react'
 import { useState } from 'react';
-import retweet1 from "../../../images/Retweet.svg";
-import retweet2 from "../../../images/retweet.png";
+import retweetIcon from "../../../images/Retweet.svg";
+import retweetedIcon from "../../../images/retweet.png";
 
 
-export default function IconRetweet({className,counts}) {
-  const [isLiked, setIsLiked] = useState(false)
+
+export default function IconRetweet({ counts }) {
+  const [isRetweeted, setIsRetweeted] = useState(false)
   const [count, setCount] = useState(counts)
 
   const handleClick = () => {
-    setIsLiked(!isLiked)
-    setCount(isLiked ? count - 1 : count + 1)
+    setIsRetweeted(!isRetweeted)
+    setCount(isRetweeted ? count - 1 : count + 1)
   }
 
   const divStyles = {
-    color: isLiked ? "#00ba7c" : " ",
+    color: isRetweeted ? "#00ba7c" : " ",
     padding: "10px",
   }
 
   return (
     <div
       className="tweet-action-button-react"
-      title="like"
+      title="retweet"
       onClick={handleClick}
     >
       <img
-        src={isLiked ? retweet2 : retweet1}
+        src={isRetweeted ? retweetedIcon : retweetIcon}
       />
       <span style={divStyles}>{count}</span>
     </div>
