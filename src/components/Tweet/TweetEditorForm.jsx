@@ -1,17 +1,30 @@
 import TweetEditorButtons from "./TweetEditorButtons"
+import { useState } from "react"
 
 
-export default function TweetEditorForm() {
+export default function TweetInput({ setTweet }) {
+  const handleInputChange = (event) => {
+    setTweet(event.target.value)
+  }
+
   return (
     <div className="tweet-editor-form">
-        <form method="" action="">
-            <input 
-                type="text" 
-                placeholder="What's happening ?" 
-                className="tweet-editor-input" 
-            />
+            <textarea onChange={handleInputChange} placeholder="What's happening ?" className="tweet-editor-input" />
             <TweetEditorButtons />
-        </form>
     </div>
   )
 }
+
+
+// export default function TweetInput({ setTweet }) {
+//   const handleInputChange = (event) => {
+//     setTweet(event.target.value)
+//   }
+
+//   return 
+// }
+// <input 
+//                 type="text" 
+//                 placeholder="What's happening ?" 
+                
+//             />

@@ -1,7 +1,7 @@
 const data = [
     {
        id:1,
-       avatarTweet:"src/images/Profile-Photo-CNN.svg",
+       avatarTweet:"src/images/tweet-profile-photo.png",
        titleTweet:"CNN",
        certificat:"src/images/Vector.svg",
        detailsTitleTweet:"@CNN . ",
@@ -29,10 +29,10 @@ const data = [
      },
      {
         id:3,
-        avatarTweet:"src/images/Profile-Photo-twitter.svg",
+        avatarTweet:"src/images/twetter-icon.png",
         titleTweet:"Twitter",
         certificat:"src/images/Vector.svg",
-        detailsTitleTweet:"@Twitter . ",
+        detailsTitleTweet:"@Titter . ",
         time:"Oct 30",
         textTweet:"BIG NEWS lol jk still Twitter",
         imageTweet:"",
@@ -43,10 +43,10 @@ const data = [
      },
      {
         id:4,
-        avatarTweet:"src/images/Profile-Photo-twitter.svg",
+        avatarTweet:"src/images/twetter-icon.png",
         titleTweet:"Twitter",
         certificat:"src/images/Vector.svg",
-        detailsTitleTweet:"@Twitter . ",
+        detailsTitleTweet:"@Titter . ",
         time:"Oct 4",
         textTweet:"hello literally everyone",
         imageTweet:"",
@@ -57,13 +57,13 @@ const data = [
      },
      {
         id:5,
-        avatarTweet:"src/images/Profile-Photo-twitter.svg",
+        avatarTweet:"src/images/twetter-icon.png",
         titleTweet:"Twitter",
         certificat:"src/images/Vector.svg",
-        detailsTitleTweet:"@Twitter . ",
+        detailsTitleTweet:"@Titter . ",
         time:"Oct 4",
         textTweet:"hello literally everyone",
-        imageTweet:"src/images/tweet-image.png",
+        imageTweet:"",
         message:"",
         share:"",
         like: 0,
@@ -71,4 +71,4 @@ const data = [
      }    
 ]
 
-export default data
+export default data;
