@@ -1,12 +1,13 @@
-import TweetEditorActions from "./TweetEditorActions"
-import Button from "../Button/Button"
 import TweetButton from "./TweetButton"
+import tweetData from "../../Data/DataEditTweetProfil"
 import { useState } from "react"
 
 
 export default function TweetEditorButtons({ setImage }) {
   const handleImageChange = (event) => {
-    setImage(URL.createObjectURL(event.target.files[0]))
+    const imageUrl = URL.createObjectURL(event.target.files[0])
+    setImage(imageUrl)
+    tweetData.image = imageUrl
   }
 
   return (

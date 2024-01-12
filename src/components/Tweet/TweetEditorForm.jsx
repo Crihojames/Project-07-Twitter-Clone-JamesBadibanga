@@ -1,10 +1,12 @@
 import TweetEditorButtons from "./TweetEditorButtons"
 import { useState } from "react"
+import tweetData from "../../Data/DataEditTweetProfil"
 
 
 export default function TweetInput({ setTweet }) {
   const handleInputChange = (event) => {
     setTweet(event.target.value)
+    tweetData.text = event.target.value
   }
 
   return (
