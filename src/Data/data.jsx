@@ -29,7 +29,7 @@ const data = [
      },
      {
         id:3,
-        avatarTweet:"src/images/twetter-icon.png",
+        avatarTweet:"src/images/Profile-Photo-twitter.svg",
         titleTweet:"Twitter",
         certificat:"src/images/Vector.svg",
         detailsTitleTweet:"@Titter . ",
@@ -43,7 +43,7 @@ const data = [
      },
      {
         id:4,
-        avatarTweet:"src/images/twetter-icon.png",
+        avatarTweet:"src/images/Profile-Photo-twitter.svg",
         titleTweet:"Twitter",
         certificat:"src/images/Vector.svg",
         detailsTitleTweet:"@Titter . ",
@@ -57,7 +57,7 @@ const data = [
      },
      {
         id:5,
-        avatarTweet:"src/images/twetter-icon.png",
+        avatarTweet:"src/images/Profile-Photo-twitter.svg",
         titleTweet:"Twitter",
         certificat:"src/images/Vector.svg",
         detailsTitleTweet:"@Titter . ",
