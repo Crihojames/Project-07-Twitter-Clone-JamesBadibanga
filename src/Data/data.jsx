@@ -1,7 +1,7 @@
 const data = [
     {
        id:1,
-       avatarTweet:"src/images/tweet-profile-photo.png",
+       avatarTweet:"src/images/Profile-Photo-CNN.svg",
        titleTweet:"CNN",
        certificat:"src/images/Vector.svg",
        detailsTitleTweet:"@CNN . ",
