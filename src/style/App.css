@@ -588,6 +588,7 @@ li:hover{
     border-radius: 30px;
 } */
 
+
 .tweet-action-button-react{
     display: flex;
     width: 90px;
@@ -645,3 +646,14 @@ button:focus + .tweet-share-option {
 .tweet-actions > .tweet-action-button-group :hover{
     color: cyan;
 } */
+.image-background-profil{
+    height: 200px;
+    background-image: url(https://pbs.twimg.com/profile_banners/759251/1689257013/600x200);
+}
+
+.image-background-profil > img{
+    margin-top: 180px;
+    margin-left: 20px;
+    background-color: #181818;
+    border-radius: 100%;
+}
