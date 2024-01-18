@@ -34,7 +34,7 @@ export default function Tweet() {
                         <div className="tweet-actions">
                             <IconComent counts={tweet.message} className='tweet-action-button-reply'/>
                             <IconRetweet counts={tweet.share} className={'tweet-action-button-retweet'}/>
-                            <IconLike counts={tweet.like} className={'tweet-action-button-react'} />
+                            <IconLike counts={tweet.like} className={'tweet-action-button-like'} />
                             <IconUpload counts={tweet.upload} className={'tweet-action-button-group'}/>
                         </div>
                     </div>

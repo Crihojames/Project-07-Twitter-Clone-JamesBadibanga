@@ -21,7 +21,6 @@ export default function ShareButton() {
           <button onClick={() => alert("Copier le lien du tweet")}>
             Copier le lien du tweet
           </button>
-          {/* Ajoutez ici d'autres options de partage */}
         </div>
       )}
     </div>

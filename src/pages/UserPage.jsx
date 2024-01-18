@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import data from '../Data/data'
 import Sidebar from '../components/Sidebar/Sidebar'
 import TrendsProfil from '../components/Profil/TrendsProfil'

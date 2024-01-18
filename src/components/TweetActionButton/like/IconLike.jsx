@@ -1,5 +1,4 @@
 import { useState } from "react"
-
 const reacts = "src/images/React.svg"
 const liked = "src/images/Liked.svg"
 
