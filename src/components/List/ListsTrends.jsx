@@ -1,4 +1,4 @@
-import SearchIcon from "../../images/search.svg"
+import SearchIcon from "/images/search.svg"
 
 function ListsTrends() {
   return (

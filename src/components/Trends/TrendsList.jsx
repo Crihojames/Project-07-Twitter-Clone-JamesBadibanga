@@ -1,17 +1,17 @@
-import More2 from "../../images/More-2.svg"
-import trendsData from "../../Data/TrendsListData"
+import More2 from "/images/More-2.svg"
+import trendsData from "../../Data/initial-data.json"
 
 function TrendsList() {
   return (
     <>
       {
-        trendsData.map(trends =>(
-          <div className="trends-list" key={trends.key}>
+        trendsData.trendsData.map(trends =>(
+          <div className="trends-list" key={trends.id}>
             <div className="trends-list-title">
               <span className="tweet-title-details">{trends.title}</span>
               <img src={More2} alt="" />
             </div>
-            <p className="trends-author">{trends.author}</p>
+            <p>{trends.author}</p>
             <p className="tweet-title-details">{trends.number} <span className="tweet-title-details"> Tweets</span></p>
           </div>
         ))

@@ -1,7 +1,7 @@
 import React from 'react'
 import TrendsList from './TrendsList'
-import SearchIcon  from '../../images/search.svg'
-import Settings from '../../images/Settings.svg'
+import SearchIcon  from '/images/search.svg'
+import Settings from '/images/Settings.svg'
 import TrendsFollo from './TrendsFollo'
 
 export default function Trends() {
@@ -14,7 +14,7 @@ export default function Trends() {
         <div className="trends-container">
             <div className='trends-container-title'>
                 <h2>Trends for you</h2>
-               <button><img src={Settings} alt="" /></button>
+                <img src={Settings} alt="" />
             </div>
             <TrendsList />
         </div>

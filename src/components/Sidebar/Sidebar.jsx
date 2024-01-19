@@ -1,5 +1,5 @@
 import SidebarOptions from "./SidebarOptions";
-import Tweeter from "../../images/Twitter.svg";
+import Tweeter from "/images/Twitter.svg";
 import CompteInSideBar from "./CompteInSideBar";
 
 

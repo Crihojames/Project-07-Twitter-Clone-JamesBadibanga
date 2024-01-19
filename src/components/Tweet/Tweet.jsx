@@ -1,28 +1,31 @@
-import React from 'react'
-import data from '../../Data/data'
+import { useContext } from 'react'
+import { TweetContext } from '../../TweetContext'
+import { Link } from 'react-router-dom'
 import IconComent from '../TweetActionButton/comentIcon/IconComent'
 import IconLike from '../TweetActionButton/like/IconLike'
 import IconRetweet from '../TweetActionButton/retweetIcon/IconRetweet'
 import IconUpload from '../TweetActionButton/uploadIcon/IconUpload'
-import { Link } from 'react-router-dom'
+
 
 export default function Tweet() {
+
+    const { tweetData } = useContext(TweetContext)
 
   return (
     <>
         {
-            data.map(tweet =>(
+            tweetData.map(tweet =>(
                 <div className='tweet' key={tweet.id}>
                     <div className="tweet-avatar">
-                    <Link to={`/profils/${tweet.id}`}>
+                    <Link to={`/profils/${tweet.auteur}`}>
                         <img src={tweet.avatarTweet} alt="" />
                     </Link>
                     </div>
                     <div className="tweet-content">
                         <div className="tweet-body">
                             <div className="tweet-title">
-                                <span className='tweet-title-author'>{tweet.titleTweet}</span>
-                                <span><img src={tweet.certificat} alt="certificated" /></span>
+                                <span className='tweet-title-author'>{tweet.auteur}</span>
+                                {tweet.certificat ? (<span><img src="/images/Vector.svg" alt="certificated" /></span>):(<span>-</span>)}
                                 <span className='tweet-title-details'>{tweet.detailsTitleTweet}</span>
                                 <span className='tweet-title-details'>{tweet.time}</span>
                             </div>
@@ -32,9 +35,9 @@ export default function Tweet() {
                             {tweet.imageTweet && <span className='tweet-image'><img src={tweet.imageTweet} alt=""/></span>}
                         </div>
                         <div className="tweet-actions">
-                            <IconComent counts={tweet.message} className='tweet-action-button-reply'/>
+                            <IconComent counts={tweet.message} className={'tweet-action-button-reply'}/>
                             <IconRetweet counts={tweet.share} className={'tweet-action-button-retweet'}/>
-                            <IconLike counts={tweet.like} className={'tweet-action-button-like'} />
+                            <IconLike counts={tweet.like} className={'tweet-action-button-react'} />
                             <IconUpload counts={tweet.upload} className={'tweet-action-button-group'}/>
                         </div>
                     </div>

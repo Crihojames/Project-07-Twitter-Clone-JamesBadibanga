@@ -1,0 +1,130 @@
+{
+    "currentuser": {
+      "profil": "/images/profile-photo.png",
+      "name": "Bradley Ortiz",
+      "subname": "@bradley_",
+      "domain": "Les dev web comment vous faites pour ne pas vous tuer avec l’état de votre industrie? J’ai du faire du web 30 minutes pour Epitech j’ai jamais autant eu envie d’exploser un ordinateur"
+   },
+    "tweet": [
+        {
+           "id":1,
+           "avatarTweet" :"/images/Profile-Photo-CNN.svg",
+           "auteur" :"CNN",
+           "certificat" : true,
+           "detailsTitleTweet" :"@CNN . ",
+           "time" :"7m",
+           "textTweet" :"President Joe Biden a new agreement reached with the European union to ease Trume era tariffs on aluminum and steel as a 'major breakthough' that would service to both strengthen the US steel industry and combat the global climate",
+           "imageTweet" :"",
+           "message" :"57",
+           "share" :"144",
+           "like" : 184,
+           "upload" :"" 
+        },
+        {
+            "id":2,
+            "avatarTweet" :"/images/image 1.svg",
+            "auteur" :"The New York Times",
+            "certificat" : true,
+            "detailsTitleTweet" :"@mytypes . ",
+            "time" :"2H",
+            "textTweet" :"Gardening boomed during the pandemic. Six Black writers share how has helped them re-establish, and reimagine, a connection to cultivation and the land",
+            "imageTweet" :"/images/tweet-image.png",
+            "message" :"19",
+            "share" :"48",
+            "like" : 482,
+            "upload" :"19" 
+         },
+         {
+            "id" :3,
+            "avatarTweet" :"/images/Profile-Photo-twitter.svg",
+            "auteur" :"Twitter",
+            "certificat" :true,
+            "detailsTitleTweet" :"@Twitter . ",
+            "time" :"Oct 30",
+            "textTweet" :"BIG NEWS lol jk still Twitter",
+            "imageTweet" :"",
+            "message" :"6.8K",
+            "share" :"36.6K",
+            "like": 267,
+            "upload" :""
+         },
+         {
+            "id" :4,
+            "avatarTweet" :"/images/Profile-Photo-twitter.svg",
+            "auteur" :"Twitter",
+            "certificat" :true,
+            "detailsTitleTweet" :"@Twitter . ",
+            "time" :"Oct 4",
+            "textTweet" :"hello literally everyone",
+            "imageTweet" :"",
+            "message" :"118.7K",
+            "share" :"785.4K",
+            "like" : 333,
+            "upload" :"" 
+         },
+         {
+            "id" :5,
+            "avatarTweet" :"/images/Profile-Photo-twitter.svg",
+            "auteur" :"Twitter",
+            "certificat" :true,
+            "detailsTitleTweet" :"@Twitter . ",
+            "time" :"Oct 14",
+            "textTweet" :"hello literally everyone",
+            "imageTweet" :"",
+            "message" :"",
+            "share" :"",
+            "like" : 0,
+            "upload" :"" 
+         }
+    ],
+    "followData" : [
+        {
+           "id":1,
+           "avatar":"/images/image 1.svg",
+           "title":"The New York Times",
+            "certificat":"src/images/Vector.svg",
+           "author":"@nytimes"
+        },
+        {
+            "id":2,
+            "avatar" :"/images/Profile-Photo-CNN.svg",
+            "title":"CNN",
+            "certificat":"src/images/Vector.svg",
+            "author":"@CNN"
+         },
+         {
+            "id":3,
+            "avatar":"images/Profile-Photo-twitter.svg",
+            "title":"Twitter",
+            "certificat":"src/images/Vector.svg",
+            "author" :"@Twitter"
+         }
+    ],
+    "trendsData" : [
+        {
+           "id" :1,
+           "title" :"Trebding in Turkey",
+           "author" :"#SQUID",
+           "number" :"2,066"
+        },
+        {
+            "id" :2,
+            "title" :"Trebding in Turkey",
+            "author":"#SQUID",
+            "number":"2,066"
+         },
+         {
+            "id":3,
+            "title" :"Trebding in Turkey",
+            "author":"#SQUID",
+            "number" :"2,066"
+         },
+         {
+            "id":4,
+            "title" :"Trebding in Turkey",
+            "author" :"#SQUID",
+            "number" :"2,066"
+         }
+    ]     
+  }
+  

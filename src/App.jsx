@@ -26,7 +26,7 @@ export default function App() {
             <Route path="/list" element={<List />} />
             <Route path="/profil" element={<Profil />} />
             <Route path="/more" element={<Mores />} />
-            <Route path="/profils/:id" element={<UserPage />} />
+            <Route path="/profils/:auteur" element={<UserPage />} />
           </Routes>
       </BrowserRouter>
     </Layout>

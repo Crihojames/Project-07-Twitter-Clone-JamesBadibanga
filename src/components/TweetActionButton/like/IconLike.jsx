@@ -1,31 +1,45 @@
 import { useState } from "react"
-const reacts = "src/images/React.svg"
-const liked = "src/images/Liked.svg"
 
-export default function IconLike({ counts }) {
-  const [isLiked, setIsLiked] = useState(false)
-  const [count, setCount] = useState(counts)
 
-  const handleClick = () => {
-    setIsLiked(!isLiked)
-    setCount(isLiked ? count - 1 : count + 1)
-  }
+const reacts = "/images/React.svg"
+const liked = "/images/Liked.svg"
 
-  const divStyles = {
-    color: isLiked ? "red" : " ",
-    padding: "10px",
-  }
+
+
+export default function IconLike({counts}) {
+
+const [icon, setIcon] = useState(true)
+const [count, setCount] = useState(counts)
+
+
+
+const changeIcon =() =>{
+    setIcon(!icon)
+}
+
+const handleClick = () =>{
+    if(!icon){
+        setCount(count -1)
+    }else{
+        setCount(count +1)
+    }
+}
+
 
   return (
-    <div
-      className="tweet-action-button-react"
-      title="like"
-      onClick={handleClick}
-    >
-      <img
-        src={isLiked ? liked : reacts}
-      />
-      <span style={divStyles}>{count}</span>
+    <div className="tweet-action-button-react" title="like" onClick={()=>{changeIcon(), handleClick()}}>
+        <span className="tweet-action-button-over">
+            <img src={`${icon ? reacts : liked}`} />
+        </span>
+        <span style={{ color: !icon ? 'red' : ' ', padding: '10px' }}>{count}</span>
     </div>
   )
 }
+
+
+
+
+
+
+
+

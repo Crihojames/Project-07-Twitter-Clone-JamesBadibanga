@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 div{
     border: solid 1px #ffffff31;
@@ -18,7 +21,8 @@ body{
 }
 
 .timeline {
-    flex: 0 0 800px;
+    flex: 0 0 50%;
+    min-width: 50px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
@@ -111,25 +115,6 @@ body{
     background-color: #1376b4; /* Couleur de fond lors du survol */
     color: #ffffff; /* Couleur du texte lors du survol */
 }
-
-button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-}
-
-.btn{
-    font-weight: bold;
-    width: 225px;
-    height: 52px;
-    font-size: 17px;
-    margin: 0 20px;
-}
-
 .tweet{
     display: flex;
     justify-content: flex-start;
@@ -138,6 +123,7 @@ button {
     padding: 1.5rem 1rem;
     border-bottom: 1px solid #2F3336;
 }
+
 
 .tweet-avatar {
     /*height: 70px;*/
@@ -204,10 +190,11 @@ button {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    gap: 5rem;
     color: grey;
     font-size: 1rem;
     width: 100%;
+    padding-right: 20px;
+    
 }
 
 .tweet-actions svg{
@@ -230,10 +217,10 @@ button {
     flex-direction: column;
     padding-top: 20px;
     height: 100vh;
-    width: 275px;
+    width: 22%;
     position: sticky;
     top: 0;
-    margin-left: 150px;
+    margin-left: 3%;
     font-family: 'Inter', sans-serif;
 }
 .sidebar-image{
@@ -245,9 +232,6 @@ button {
 .footer-sidebar{
     margin-top: auto;
 }
-.compte-icon{
-    display: flex;
-}
 /* end sidebar css */
 
 /* sidebarOptions css */
@@ -256,23 +240,19 @@ button {
     cursor: pointer;
     list-style: none;
 }
-
-.sidebarOptions > li {
+.sidebarOptions li {
     font-weight: bold;
     font-size: 19px;
     margin-bottom: 25px;
     padding: 15px;
 }
-li {
-    display: flex;
-    gap: 20px;
-    padding: 5px 7px;
-}
+
+
 li:hover{
     background-color: #181818;
     border-radius: 30px;
     transition: #181818 100ms ease-out;
-    width: 56%;
+    width: 80%;
 }
 
 .navLink{
@@ -282,6 +262,13 @@ li:hover{
     gap: 20px;
 }
 
+.btn{
+    margin-top: 20px;
+    border: none;
+    font-weight: 900;
+    text-transform: inherit;
+    width: 100%;
+}
 
 /* end sidebarOptions css */
 
@@ -289,23 +276,22 @@ li:hover{
 .compte-in-sidebar{
     display: flex;
     gap: 10px;
-    width: 251px;
-    height: 64px;
-    margin: 6px;
 }
 
 .compte-in-sidebar-avatar{
-    width: 40px;
-    height: 40PX;
-    margin: 5px;
+    width: 15%;
 }
-
+.compte-icon{
+    display: flex;
+}
 .title-icon{
     width: 200px;
 }
+
 .compMortIcon{
-  padding-top: 15px;  
-}
+    padding-top: 15px;  
+  }
+
 /* end compte-in-sidebar-css */
 
 /* scroll css */
@@ -326,9 +312,11 @@ li:hover{
     padding-right: auto;
     padding-bottom: 119px;
     min-height: 1024px;
-    width: 360px;
+    width: 22%;
     font-family: 'Inter', sans-serif;
-    margin-right: 150px;
+    margin-right: 2%;
+    margin-left: 1px;
+
     
 }
 
@@ -339,19 +327,17 @@ li:hover{
     border-radius: 42px;
     margin-top: 6px;
     height: 42px;
-    width: 350px;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.trends-input > input{
+.trends-input  input{
     border: none;
     outline: none;
     background-color: rgb(32, 35, 39);
     padding-left: 25px;
     color: #fff;
-    position: sticky;
     font-size: 15px;
 }
 
@@ -367,14 +353,13 @@ li:hover{
     background-color: rgb(32, 35, 39);
     border-radius: 15px;
     min-height: 426px;
-    width: 350px;
+    width: 100%;
 }
 
 .trends-container-title{
     display: flex;
     justify-content: space-between;
 }
-
 .trends-author{
     font-weight: bold;
 }
@@ -403,16 +388,12 @@ li:hover{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .trends-list:hover, .follow-list:hover {
     background-color: rgb(50, 54, 59);
-    /* Couleur de fond lors du survol */
 }
 
-
-
 .trendslist-button{
-    font-weight: 900;
+    font-weight: ;
     color: #1D9BF0;
     cursor: pointer;
 }
@@ -432,10 +413,10 @@ li:hover{
 }
 
 .follow-list-title{
-    width: 190px;
-    margin-left: 3px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
 }
-
 .follow-title{
     display: flex;
 }
@@ -462,12 +443,13 @@ li:hover{
 }
 
 .image-background-profil{
-    height: 150px;
-    background-image: url('src/images/JS-Full-Form.webp');
+    height: 250px;
+    background-image: url('https://pbs.twimg.com/profile_banners/3144682635/1701864251/1500x500');
+    background-size: 100% 100%;
 }
 
 .image-background-profil > img{
-    margin-top: 100px;
+    margin-top: 180px;
     margin-left: 20px;
     background-color: #181818;
     border-radius: 100%;
@@ -478,7 +460,7 @@ li:hover{
     flex-direction: column;
     justify-content: space-between;
     padding-left: 20px;
-    height: 250px;
+    height: 270px;
     border-bottom: #6E767D solid 1px;
 }
 
@@ -540,120 +522,90 @@ li:hover{
     border-radius: 2px;
 }
 
+.tweet-action-button-react{
+    display: flex;
+}
 /* over-tweet-css */
 
 .tweet-action-button-over {
-    padding: 10px;
+    padding: 0.625rem;
 }
-/* 
-.tweet-action-button-reply{
-   
-}
-
-.tweet-action-button-reply:hover .tweet-action-button-over-2{
-    color: #92114d;
+.tweet-action-button-reply > .tweet-action-button-over{
+    background-color: #0a171f34;
     border-radius: 30px;
 }
-
-.tweet-action-button-retweet:hover .tweet-action-button-over{
-    color: #1d9bf0;
-    background-color: #0a171f;
-    border-radius: 30px;
+.tweet-action-button-retweet > .tweet-action-button-over{
+    background-color: #071a143f;
+    border-radius: 1.875rem;
+}
+.tweet-action-button-react > .tweet-action-button-over{
+    background-color: #20091436;
+    border-radius: 1.875rem;
 }
 
-.tweet-action-button-retweet:hover .tweet-action-button-over-2{
-    color: #1d9bf0;
-    border-radius: 30px;
+.tweet-action-button-group > .tweet-action-button-over{
+    background-color: #0a171f2f;
+    border-radius: 1.875rem;
 }
 
-.tweet-action-button-react:hover .tweet-action-button-over{
-    color: #00ba7c;
-    background-color: #071a14;
-    border-radius: 30px;
+.tweet-action-button-reply:hover{
+    filter: invert(61%) sepia(42%) saturate(5478%) hue-rotate(185deg) brightness(99%) contrast(98%);
+    cursor:pointer;
 }
-
-.tweet-action-button-react:hover .tweet-action-button-over-2{
-    color: #00ba7c;
-    border-radius: 30px;
-} */
-/* 
-.tweet-action-button-group:hover .tweet-action-button-over{
-    color: #1d9bf0;
-    background-color: #0a171f;
-    border-radius: 30px;
+.tweet-action-button-react:hover{
+    filter: invert(28%) sepia(93%) saturate(4177%) hue-rotate(339deg) brightness(116%) contrast(96%);
+    cursor: pointer ;
 }
-
-.tweet-action-button-group:hover .tweet-action-button-over-2{
-    color: #1d9bf0;
-    border-radius: 30px;
-} */
-
-
-.tweet-action-button-react{
-    display: flex;
-    width: 90px;
-    height: 50px;
-    padding: 2px;
+.tweet-action-button-retweet:hover{
+    filter: invert(97%) sepia(52%) saturate(2839%) hue-rotate(63deg) brightness(110%) contrast(96%);
     cursor: pointer;
-
 }
-.tweet-action-button-react > img{
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
+.tweet-action-button-group:hover{
+    filter: invert(100%) sepia(50%) saturate(2839%) hue-rotate(63deg) brightness(52%) contrast(70%);
+    cursor: pointer;
 }
 
-/* Style pour le bouton de partage */
-.tweet-share-option{
-    display: none;
-  position: absolute;
-  width: 300px; /* Ajustez en fonction de vos besoins */
-  background-color: black;
-  /* border: 1px solid #e1e8ed; */
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 1px 3px rgba(250, 250, 250, 0.1);
-  color: #fff;
-}
-button:focus + .tweet-share-option {
-    display: block;
-  }
-.tweet-share-option button{
-    display: block;
-  width: 100%;
-  text-align: left;
-  border: none;
-  background-color: transparent;
-  padding: 10px 0;
-  cursor: pointer;
-}
-.tweet-share-option button:hover {
-    background-color: #181818;
-  }
-/* overs des texte sur les boutton d'action tweet */
-/* .tweet-actions > .tweet-action-button-react :hover{
-    color: red;
+/* userprofil-css */
+
+.image-background-profil-user > img{
+    width: 15%;
 }
 
+/* button back-up profil */
 
-.tweet-actions > .tweet-action-button-reply :hover{
-    color: blue;
+.back-header{
+  display: flex;
+  gap: .625rem;  
 }
 
-.tweet-actions > .tweet-action-button-retweet :hover{
-    color: green;
-}
-.tweet-actions > .tweet-action-button-group :hover{
-    color: cyan;
-} */
-.image-background-profil{
-    height: 200px;
-    background-image: url(https://pbs.twimg.com/profile_banners/759251/1689257013/600x200);
+.back-button{
+   padding-top: .3125rem; 
 }
 
-.image-background-profil > img{
-    margin-top: 180px;
-    margin-left: 20px;
+.back-header > .back-button {
+    background-color: #0a171f2f;
+    border-radius: 1.875rem;
+}
+
+.back-button:hover{
+    filter: invert(61%) sepia(42%) saturate(5478%) hue-rotate(185deg) brightness(99%) contrast(98%);
+    cursor:pointer;
+}
+
+.profil-headear-title-space{
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+}
+.profil-hedear-description{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.profil-icon img {
+    width: 15%;
+    margin-bottom: 10px;
+    margin-left: 5px;
     background-color: #181818;
     border-radius: 100%;
 }
