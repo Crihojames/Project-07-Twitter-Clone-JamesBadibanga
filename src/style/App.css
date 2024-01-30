@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 div{
     border: solid 1px #ffffff31;
@@ -377,7 +377,7 @@ li:hover{
     background-color: rgb(32, 35, 39);
     border-radius: 15px;
     min-height: 320px;
-    width: 350px;
+    width: 100%;
 }
 
 .trends-list, .follow-list {
